@@ -151,4 +151,11 @@ public class AddressBookSystem {
     	Contact person = new Contact(firstName, lastName, address , city, state, zip, phoneNumber, email);
         contact.add(person);
     }
+    public void addContact(Contact p) {
+    	      if (listOfContacts.contains(p))
+    	         System.out.println("Sorry this contact already exists.");
+    	      else
+    	    	  contact.add(p);    
+    	return;
+    	}
 }
